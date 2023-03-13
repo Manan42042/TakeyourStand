@@ -77,7 +77,7 @@ namespace TakeyourStand.Migrations.SeedData
                 _context.SaveChanges();
 
                 //Assign Admin role to admin user
-                _context.UserRoles.Add(new UserRole(_tenantId, adminUser.Id, adminRole.Id));
+                _context.UserRoles.Add(new Abp.Authorization.Users.UserRole(_tenantId, adminUser.Id, adminRole.Id));
                 _context.SaveChanges();
             }
         }

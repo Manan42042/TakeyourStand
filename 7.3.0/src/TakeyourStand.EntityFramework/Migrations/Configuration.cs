@@ -3,6 +3,8 @@ using Abp.MultiTenancy;
 using Abp.Zero.EntityFramework;
 using TakeyourStand.Migrations.SeedData;
 using EntityFramework.DynamicFilters;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace TakeyourStand.Migrations
 {
@@ -22,12 +24,22 @@ namespace TakeyourStand.Migrations
 
             if (Tenant == null)
             {
-                //Host seed
-                new InitialHostDbBuilder(context).Create();
+                try
+                {
 
-                //Default tenant seed (in host database).
-                new DefaultTenantCreator(context).Create();
-                new TenantRoleAndUserBuilder(context, 1).Create();
+                    //Host seed
+                    new InitialHostDbBuilder(context).Create();
+
+                    //Default tenant seed (in host database).
+                    new DefaultTenantCreator(context).Create();
+                    new TenantRoleAndUserBuilder(context, 1).Create();
+
+                }
+                catch (System.Exception ex)
+                {
+                   Console.Write(Environment.NewLine);
+                    Console.Write("Error :            - " + ex.ToString());
+                }
             }
             else
             {

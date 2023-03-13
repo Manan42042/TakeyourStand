@@ -13,10 +13,10 @@ namespace TakeyourStand.Migrations
                 "dbo.AbpEntityChanges",
                 c => new
                     {
-                        Id = c.Long(nullable: false, identity: true),
+                        Id = c.Int(nullable: false, identity: true),
                         ChangeTime = c.DateTime(nullable: false),
                         ChangeType = c.Byte(nullable: false),
-                        EntityChangeSetId = c.Long(nullable: false),
+                        EntityChangeSetId = c.Int(nullable: false),
                         EntityId = c.String(maxLength: 48),
                         EntityTypeFullName = c.String(maxLength: 192),
                         TenantId = c.Int(),
@@ -35,8 +35,8 @@ namespace TakeyourStand.Migrations
                 "dbo.AbpEntityPropertyChanges",
                 c => new
                     {
-                        Id = c.Long(nullable: false, identity: true),
-                        EntityChangeId = c.Long(nullable: false),
+                        Id = c.Int(nullable: false, identity: true),
+                        EntityChangeId = c.Int(nullable: false),
                         NewValue = c.String(maxLength: 512),
                         OriginalValue = c.String(maxLength: 512),
                         PropertyName = c.String(maxLength: 96),
@@ -56,17 +56,17 @@ namespace TakeyourStand.Migrations
                 "dbo.AbpEntityChangeSets",
                 c => new
                     {
-                        Id = c.Long(nullable: false, identity: true),
+                        Id = c.Int(nullable: false, identity: true),
                         BrowserInfo = c.String(maxLength: 512),
                         ClientIpAddress = c.String(maxLength: 64),
                         ClientName = c.String(maxLength: 128),
                         CreationTime = c.DateTime(nullable: false),
                         ExtensionData = c.String(),
                         ImpersonatorTenantId = c.Int(),
-                        ImpersonatorUserId = c.Long(),
+                        ImpersonatorUserId= c.Long(),
                         Reason = c.String(maxLength: 256),
                         TenantId = c.Int(),
-                        UserId = c.Long(),
+                        UserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {

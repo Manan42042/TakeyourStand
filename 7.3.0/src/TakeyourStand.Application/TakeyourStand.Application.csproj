@@ -250,6 +250,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoGenerateBarcodeType\AutoGenratedBarcodeTypeAppService.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\CreateAutoGenratedBarcodeTypeInput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\CreateAutoGenratedBarcodeTypeOutput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\GetAllAutoGenratedBarcodeTypeItem.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\GetAllAutoGenratedBarcodeTypeOutput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\GetAutoGenratedBarcodeTypeByIdOutput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\UpdateAutoGenratedBarcodeTypeInput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\Dtos\UpdateAutoGenratedBarcodeTypeOutput.cs" />
+    <Compile Include="AutoGenerateBarcodeType\IAutoGenratedBarcodeTypeAppService.cs" />
     <Compile Include="TakeyourStandApplicationModule.cs" />
     <Compile Include="TakeyourStandAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />
