@@ -13,26 +13,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Doccure</title>
+    <title>TyS</title>
 
-    <!-- Favicons -->
-    <link type="image/x-icon" href="/Theme_data/assets/img/favicon.png" rel="icon">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/Theme_data/assets/css/bootstrap.min.css">
-
-    <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="/Theme_data/assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/Theme_data/assets/plugins/fontawesome/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/Theme_data/assets/css/style.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="/Theme_data/assets/js/html5shiv.min.js"></script>
-        <script src="/Theme_data/assets/js/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body>
@@ -51,19 +33,9 @@
                             <span></span>
                         </span>
                     </a>
-                    <a href="index-2.html" class="navbar-brand logo">
-                        <img src="/Theme_data/assets/img/logo.png" class="img-fluid" alt="Logo">
-                    </a>
                 </div>
                 <div class="main-menu-wrapper">
-                    <div class="menu-header">
-                        <a href="/" class="menu-logo">
-                            <img src="/Theme_data/assets/img/logo.png" class="img-fluid" alt="Logo">
-                        </a>
-                        <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </div>
+
                     <ul class="main-nav">
                         <li class="active">
                             <a href="/">Home</a>
@@ -82,8 +54,8 @@
                         </li>
 
                         @*<li>
-                            <a href="/account/login" target="_blank">Admin</a>
-                        </li>*@
+                                <a href="/account/login" target="_blank">Admin</a>
+                            </li>*@
                         <li class="login-link">
                             <a href="/account/login">Login / Signup</a>
                         </li>
@@ -108,158 +80,14 @@
         <!-- /Header -->
 
 
-        @RenderBody();
+        @RenderBody()
         @RenderSection("scripts", required: false)
         @Html.PartialViewScripts()
-
-
-
-        <footer class="footer">
-
-            <!-- Footer Top -->
-            <div class="footer-top">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-
-                            <!-- Footer Widget -->
-                            <div class="footer-widget footer-about">
-                                <div class="footer-logo">
-                                    <img src="/Theme_data/assets/img/footer-logo.png" alt="logo">
-                                </div>
-                                <div class="footer-about-content">
-                                    <p><br /><br /><br /><br /><br /><br /> </p>
-                                    <div class="social-icon">
-                                        <ul>
-                                            <li>
-                                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Footer Widget -->
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-
-                            <!-- Footer Widget -->
-                            <div class="footer-widget footer-menu">
-                                <h2 class="footer-title">Features</h2>
-                                <ul>
-                                    <li><a href="search.html"><i class="fas fa-angle-double-right"></i> Product management</a></li>
-                                    <li><a href="login.html"><i class="fas fa-angle-double-right"></i> Product order management</a></li>
-                                    <li><a href="register.html"><i class="fas fa-angle-double-right"></i> Best Client</a></li>
-                                    <li><a href="booking.html"><i class="fas fa-angle-double-right"></i>Good Price</a></li>
-                                    <li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Seprate Domain</a></li>
-                                    <li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Contact us</a></li>
-                                </ul>
-                            </div>
-                            <!-- /Footer Widget -->
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-
-                            <!-- Footer Widget -->
-                            <div class="footer-widget footer-menu">
-
-                            </div>
-                            <!-- /Footer Widget -->
-
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-
-                            <!-- Footer Widget -->
-                            <div class="footer-widget footer-contact">
-                                <h2 class="footer-title">Contact Us</h2>
-                                <div class="footer-contact-info">
-                                    <div class="footer-address">
-                                        <span><i class="fas fa-map-marker-alt"></i></span>
-                                        <p> Near akshar purshotam mandir,<br> Halvad road, Dhrangdhra. pin 363310 </p>
-                                    </div>
-                                    <p>
-                                        <i class="fas fa-phone-alt"></i>
-                                        +91 9033242042
-                                    </p>
-                                    <p class="mb-0">
-                                        <i class="fas fa-envelope"></i>
-                                        Email : Manan.patel.msc@gmail.com
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- /Footer Widget -->
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- /Footer Top -->
-            <!-- Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="container-fluid">
-
-                    <!-- Copyright -->
-                    <div class="copyright">
-                        <div class="row">
-
-                            <div class="col-md-6 col-lg-6">
-
-                                <!-- Copyright Menu -->
-                                <div class="copyright-menu">
-                                    <ul class="policy-menu">
-                                        <li><a href="term-condition.html">Terms and Conditions</a></li>
-                                        <li><a href="privacy-policy.html">Policy</a></li>
-                                    </ul>
-                                </div>
-                                <!-- /Copyright Menu -->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Copyright -->
-
-                </div>
-            </div>
-            <!-- /Footer Bottom -->
-
-        </footer>
-        <!-- /Footer -->
-
     </div>
+
 </body>
 
-<!-- jQuery -->
-<script src="/Theme_data/assets/js/jquery.min.js"></script>
-
-<!-- Bootstrap Core JS -->
-<script src="/Theme_data/assets/js/popper.min.js"></script>
-<script src="/Theme_data/assets/js/bootstrap.min.js"></script>
-
-<!-- Slick JS -->
-<script src="/Theme_data/assets/js/slick.js"></script>
-
-<!-- Custom JS -->
-<script src="/Theme_data/assets/js/script.js"></script>
-
-
-
-
+@*JQuery*@
 
 <!-- doccure/  30 Nov 2019 04:11:53 GMT -->
 </html>
