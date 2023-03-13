@@ -9,45 +9,158 @@
     @Html.IncludeScript("~/Views/Account/Login.js")
 }
 
-<div class="card">
-    <div class="body">
-        <form id="LoginForm" method="POST" asp-action="Login">
-            <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
-            <input type="hidden" name="returnUrlHash" />
-            <h4 class="text-center">@L("LogIn")</h4>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    <i class="material-icons">person</i>
-                </span>
-                <div class="form-line">
-                    <input type="text" class="form-control" name="UsernameOrEmailAddress" placeholder="@L("UserNameOrEmail")" required autofocus maxlength="100">
-                </div>
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon">
-                    <i class="material-icons">lock</i>
-                </span>
-                <div class="form-line">
-                    <input type="password" class="form-control" name="Password" placeholder="@L("Password")" required maxlength="100">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-8 p-t-5">
-                    <input type="checkbox" name="RememberMe" id="rememberme" class="filled-in chk-col-pink" value="true">
-                    <label for="rememberme">@L("RememberMe")</label>
-                </div>
-                <div class="col-xs-4">
-                    <button id="LoginButton" class="btn btn-block bg-pink waves-effect" type="submit">@L("LogIn")</button>
-                </div>
-            </div>
-            @if (Model.IsSelfRegistrationAllowed)
-            {
-                <div class="row m-t-15 m-b--20">
-                    <div class="col-xs-12">
-                        <a href="@Url.Action("Register", "Account")">@L("Register")</a>
+@*<div class="card">
+        <div class="body">
+            <form id="LoginForm" method="POST" asp-action="Login">
+                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                <input type="hidden" name="returnUrlHash" />
+                <h4 class="text-center">@L("LogIn")</h4>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" name="UsernameOrEmailAddress" placeholder="@L("UserNameOrEmail")" required autofocus maxlength="100">
                     </div>
                 </div>
-            }
-        </form>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="password" class="form-control" name="Password" placeholder="@L("Password")" required maxlength="100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8 p-t-5">
+                        <input type="checkbox" name="RememberMe" id="rememberme" class="filled-in chk-col-pink" value="true">
+                        <label for="rememberme">@L("RememberMe")</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <button id="LoginButton" class="btn btn-block bg-pink waves-effect" type="submit">@L("LogIn")</button>
+                    </div>
+                </div>
+                @if (Model.IsSelfRegistrationAllowed)
+                {
+                    <div class="row m-t-15 m-b--20">
+                        <div class="col-xs-12">
+                            <a href="@Url.Action("Register", "Account")">@L("Register")</a>
+                        </div>
+                    </div>
+                }
+            </form>
+        </div>
+    </div>*@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" href="~/theme/html/html/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/theme/html/html/assets/images/favicon.png" type="image/x-icon">
+    <title>Cuba - Premium Admin Template</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/font-awesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/vendors/icofont.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/style.css">
+    <link id="color" rel="stylesheet" href="~/theme/html/html/assets//css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets//css/responsive.css">
+</head>
+<body>
+    <!-- login page start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-7"><img class="bg-img-cover bg-center" src="~/theme/html/html/assets//images/login/2.jpg" alt="looginpage"></div>
+            <div class="col-xl-5 p-0">
+                <div class="login-card login-dark">
+                    <div>
+                        <div><a class="logo text-start" href="index.html"><img class="img-fluid for-light" src="~/theme/html/html/assets//images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark" src="~/theme/html/html/assets//images/logo/logo_dark.png" alt="looginpage"></a></div>
+                        <div class="login-main">
+                            @*<form class="theme-form">*@
+                            <form id="LoginForm" class="theme-form" method="POST" asp-action="Login">
+
+                                <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                                <input type="hidden" name="returnUrlHash" />
+                                <h4>Sign in to account</h4>
+                                <p>Enter your email & password to login</p>
+                                <div class="form-group">
+                                    <label class="col-form-label">Email Address</label>
+                                    @*<input class="form-control" type="email" required="" placeholder="Test@gmail.com">*@
+                                    <input type="text" class="form-control" name="UsernameOrEmailAddress" placeholder="@L("UserNameOrEmail")" required autofocus maxlength="100">
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Password</label>
+                                    <div class="form-input position-relative">
+                                        @*<input class="form-control" type="password" name="login[password]" required="" placeholder="*********">*@
+                                        <input type="password" class="form-control" name="Password" placeholder="@L("Password")" required maxlength="100">
+                                        <div class="show-hide"><span class="show">                         </span></div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <div class="checkbox p-0">
+                                        <input id="checkbox1" type="checkbox">
+                                        @*<label class="text-muted" for="checkbox1">Remember password</label>*@
+                                        <input type="checkbox" name="RememberMe" id="rememberme" class="filled-in chk-col-pink" value="true">
+                                        <label for="rememberme">@L("RememberMe")</label>
+
+                                    </div>
+                                    @*<button class="btn btn-primary btn-block w-100" type="submit">Sign in</button>*@
+                                    <button id="LoginButton" class="btn btn-primary btn-block w-100" type="submit">@L("LogIn")</button>
+
+                                </div>
+                                <h6 class="text-muted mt-4 or">Or Sign in with</h6>
+                                <div class="social mt-4">
+                                    <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
+                                </div>
+
+                                @if (Model.IsSelfRegistrationAllowed)
+                                {<p class="mt-4 mb-0 text-center">Don't have account?<a class="ms-2" href="@Url.Action("Register", "Account")">Create Account</a></p>
+                                    @*<div class="row m-t-15 m-b--20">
+                <div class="col-xs-12">
+                    <a href="@Url.Action("Register", "Account")">@L("Register")</a>
+                </div>
+            </div>*@
+                                }
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- latest jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap js-->
+        <script src="~/theme/html/html/assets//js/bootstrap/bootstrap.bundle.min.js"></script>
+        <!-- feather icon js-->
+        <script src="~/theme/html/html/assets//js/icons/feather-icon/feather.min.js"></script>
+        <script src="~/theme/html/html/assets//js/icons/feather-icon/feather-icon.js"></script>
+        <!-- scrollbar js-->
+        <!-- Sidebar jquery-->
+        <script src="~/theme/html/html/assets//js/config.js"></script>
+        <!-- Plugins JS start-->
+        <!-- Plugins JS Ends-->
+        <!-- Theme js-->
+        <script src="~/theme/html/html/assets//js/script.js"></script>
+        <!-- Plugin used-->
     </div>
-</div>
+</body>
+</html>

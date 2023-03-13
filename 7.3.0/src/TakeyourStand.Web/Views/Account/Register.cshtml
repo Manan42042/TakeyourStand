@@ -7,7 +7,7 @@
 @section Scripts{
     <script type="text/javascript" src="~/Views/Account/Register.js"></script>
 }
-<div class="card">
+@*<div class="card">
     <div class="body">
         <form id="RegisterForm" asp-action="Register" method="POST">
             <h4 class="text-center">@L("Register")</h4>
@@ -67,4 +67,134 @@
             </div>
         </form>
     </div>
-</div>
+</div>*@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="~/theme/html/html/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/theme/html/html/assets/images/favicon.png" type="image/x-icon">
+    <title>Cuba - Premium Admin Template</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/font-awesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/vendors/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/style.css">
+    <link id="color" rel="stylesheet" href="~/theme/html/html/assets/css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="~/theme/html/html/assets/css/responsive.css">
+  </head>
+  <body>
+    <!-- login page start-->
+    <div class="container-fluid p-0"> 
+      <div class="row m-0">
+        <div class="col-xl-7 p-0"><img class="bg-img-cover bg-center" src="~/theme/html/html/assets/images/login/1.jpg" alt="looginpage"></div>
+        <div class="col-xl-5 p-0"> 
+          <div class="login-card login-dark">
+            <div>
+              <div><a class="logo text-start" href="index.html"><img class="img-fluid for-light" src="~/theme/html/html/assets/images/logo/logo.png" alt="looginpage"><img class="img-fluid for-dark" src="~/theme/html/html/assets/images/logo/logo_dark.png" alt="looginpage"></a></div>
+              <div class="login-main"> 
+                @*<form class="theme-form">*@
+                  <form id="RegisterForm" class="theme-form" asp-action="Register" method="POST">
+
+                      @Html.AntiForgeryToken()
+
+
+                      @if (@ViewBag.ErrorMessage != null)
+                      {
+                          <div class="alert alert-danger">
+                              <i class="fa fa-warning"></i> @ViewBag.ErrorMessage
+                          </div>
+                      }
+
+                      <input type="hidden" name="IsExternalLogin" value="@Model.IsExternalLogin.ToString()" />
+                      <input type="hidden" name="ExternalLoginAuthSchema" value="@Model.ExternalLoginAuthSchema" />
+
+
+
+
+                      <h4>Create your account</h4>
+                      <p>Enter your personal details to create account</p>
+                      <div class="form-group">
+                          <label class="col-form-label pt-0">Your Name</label>
+                          <div class="row g-2">
+                              <div class="col-6">
+                                  <input type="text" class="form-control" name="Name" value="@Model.Name" placeholder="Name" required maxlength="@AbpUserBase.MaxNameLength">
+                              </div>
+                              <div class="col-6">
+                                  <input type="text" class="form-control" name="Surname" value="@Model.Surname" placeholder="Surname" required maxlength="@AbpUserBase.MaxSurnameLength">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-form-label">Email Address</label>
+                          <input type="email" class="form-control" name="EmailAddress" value="@Model.EmailAddress"  placeholder="Email" required maxlength="@AbpUserBase.MaxEmailAddressLength">
+                      </div>
+                      <div class="form-group">
+                          <label class="col-form-label">User Name</label>
+                          <input type="text" class="form-control" name="UserName" value="@Model.UserName"  placeholder="Username" required maxlength="@AbpUserBase.MaxUserNameLength">
+
+                      </div>
+                      <div class="form-group">
+                          <label class="col-form-label">Password</label>
+                          <input type="password" class="form-control" name="Password" required  placeholder="Password" maxlength="@AbpUserBase.MaxPlainPasswordLength">
+
+                      </div>
+                      <div class="form-group mb-0">
+                          <div class="checkbox p-0">
+                              <input id="checkbox1" type="checkbox">
+                              <label class="text-muted" for="checkbox1">Agree with<a class="ms-2" href="#">Privacy Policy</a></label>
+                          </div>
+
+
+                          <a href="@Url.Action("Login", "Account")" cl class="btn btn-secondary btn-block w-100" style="width:40%!important">@L("Back")</a>
+                          <button id="RegisterButton" class="btn btn-primary btn-block w-100" type="submit" style="width:40%!important">@L("Register")</button>
+
+
+                      </div>
+                      <h6 class="text-muted mt-4 or">Or signup with</h6>
+                      <div class="social mt-4">
+                          <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
+                      </div>
+                      <p class="mt-4 mb-0 text-center">Already have an account?<a class="ms-2" href="login.html">Sign in</a></p>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- latest jquery-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- Bootstrap js-->
+      <script src="~/theme/html/html/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- feather icon js-->
+      <script src="~/theme/html/html/assets/js/icons/feather-icon/feather.min.js"></script>
+      <script src="~/theme/html/html/assets/js/icons/feather-icon/feather-icon.js"></script>
+      <!-- scrollbar js-->
+      <!-- Sidebar jquery-->
+      <script src="~/theme/html/html/assets/js/config.js"></script>
+      <!-- Plugins JS start-->
+      <!-- Plugins JS Ends-->
+      <!-- Theme js-->
+      <script src="~/theme/html/html/assets/js/script.js"></script>
+      <!-- Plugin used-->
+    </div>
+  </body>
+</html>

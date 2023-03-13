@@ -212,7 +212,7 @@ namespace TakeyourStand.Web.Controllers
         {
             if (!AbpSession.TenantId.HasValue)
             {
-                return false; //No registration enabled for host users!
+                return true; //No registration enabled for host users!
             }
 
             return true;
@@ -279,7 +279,7 @@ namespace TakeyourStand.Web.Controllers
 
                 //Switch to the tenant
                 _unitOfWorkManager.Current.EnableFilter(AbpDataFilters.MayHaveTenant); //TODO: Needed?
-                _unitOfWorkManager.Current.SetTenantId(AbpSession.GetTenantId());
+                //_unitOfWorkManager.Current.SetTenantId(AbpSession.GetTenantId());
 
                 //Add default roles
                 user.Roles = new List<UserRole>();
@@ -308,7 +308,7 @@ namespace TakeyourStand.Web.Controllers
                     if (loginResult.Result == AbpLoginResultType.Success)
                     {
                         await SignInAsync(loginResult.User, loginResult.Identity);
-                        return Redirect(Url.Action("Index", "Home"));
+                        return Redirect(Url.Action("Login", "Account"));
                     }
 
                     Logger.Warn("New registered user could not be login. This should not be normally. login result: " + loginResult.Result);
