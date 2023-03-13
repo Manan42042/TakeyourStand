@@ -4,9 +4,9 @@ using Abp.Web.Mvc.Authorization;
 namespace TakeyourStand.Web.Controllers
 {
     [AbpMvcAuthorize]
-    public class HomeController : TakeyourStandControllerBase
+    public class AdminPanelController : TakeyourStandControllerBase
     {
-        public ActionResult Index()
+        public ActionResult Dashboard()
         {
             return View();
         }

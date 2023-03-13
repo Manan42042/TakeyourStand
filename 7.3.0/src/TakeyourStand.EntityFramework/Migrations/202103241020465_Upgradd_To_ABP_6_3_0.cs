@@ -22,7 +22,7 @@
                         Webhooks = c.String(),
                         Headers = c.String(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, AnnotationValues>
                 {
@@ -50,7 +50,7 @@
                         Webhooks = c.String(),
                         Headers = c.String(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, AnnotationValues>
                 {

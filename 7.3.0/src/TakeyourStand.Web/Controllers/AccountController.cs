@@ -54,8 +54,8 @@ namespace TakeyourStand.Web.Controllers
             IMultiTenancyConfig multiTenancyConfig,
             LogInManager logInManager,
             ISessionAppService sessionAppService,
-            ILanguageManager languageManager, 
-            ITenantCache tenantCache, 
+            ILanguageManager languageManager,
+            ITenantCache tenantCache,
             IAuthenticationManager authenticationManager)
         {
             _tenantManager = tenantManager;
@@ -74,9 +74,10 @@ namespace TakeyourStand.Web.Controllers
 
         public ActionResult Login(string returnUrl = "")
         {
+
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
-                returnUrl = Request.ApplicationPath;
+                returnUrl = this.Url.Action("Dashboard", "AdminPanel",null); 
             }
 
             ViewBag.IsMultiTenancyEnabled = _multiTenancyConfig.IsEnabled;
@@ -143,17 +144,21 @@ namespace TakeyourStand.Web.Controllers
             // For having a consistent behaviour across all browsers, don't rely solely on browser behaviour for proper clean-up
             // of session cookies. It is safer to use non-session cookies (IsPersistent == true) in bundle with an expiration date.
             // See http://blog.petersondave.com/cookies/Session-Cookies-in-Chrome-Firefox-and-Sitecore/
-            if (rememberMe) {
+            if (rememberMe)
+            {
                 _authenticationManager.SignIn(new AuthenticationProperties { IsPersistent = true }, identity);
-            } else {
+            }
+            else
+            {
                 _authenticationManager.SignIn(
                     new AuthenticationProperties
                     {
                         IsPersistent = true,
-                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(int.Parse(System.Configuration.ConfigurationManager.AppSettings["AuthSession.ExpireTimeInMinutes.WhenNotPersistent"] ?? "30"))
+                        ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(long.Parse(System.Configuration.ConfigurationManager.AppSettings["AuthSession.ExpireTimeInMinutes.WhenNotPersistent"] ?? "30"))
                     },
                     identity);
             }
+
         }
 
         private Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress, string tenancyName)

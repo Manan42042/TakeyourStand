@@ -259,6 +259,20 @@
   <ItemGroup>
     <Compile Include="EntityFramework\TakeyourStandDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\TakeyourStandRepositoryBase.cs" />
+    <Compile Include="Migrations\202206221055273_Upgrade_To_ABP_7.3.cs" />
+    <Compile Include="Migrations\202206221055273_Upgrade_To_ABP_7.3.Designer.cs">
+      <DependentUpon>202206221055273_Upgrade_To_ABP_7.3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303121831159_TYS7.5.cs" />
+    <Compile Include="Migrations\202303121831159_TYS7.5.designer.cs">
+      <DependentUpon>202303121831159_TYS7.5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303121959210_TYS7.6.cs" />
+    <Compile Include="Migrations\202303121959210_TYS7.6.designer.cs">
+      <DependentUpon>202303121959210_TYS7.6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SeedData\DefaultInventoryNotificationsCreator.cs" />
+    <Compile Include="Migrations\SeedData\DefaultAutoGenratedBarcodeTypeCreator.cs" />
     <Compile Include="TakeyourStandDataModule.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.cs" />
     <Compile Include="Migrations\201809270654064_InitialMigrations.Designer.cs">
@@ -323,10 +337,6 @@
     <Compile Include="Migrations\202106281034299_Upgrade_To_ABP_6_4_rc1.cs" />
     <Compile Include="Migrations\202106281034299_Upgrade_To_ABP_6_4_rc1.designer.cs">
       <DependentUpon>202106281034299_Upgrade_To_ABP_6_4_rc1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206221055273_Upgrade_To_ABP_7.3.cs" />
-    <Compile Include="Migrations\202206221055273_Upgrade_To_ABP_7.3.designer.cs">
-      <DependentUpon>202206221055273_Upgrade_To_ABP_7.3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -400,6 +410,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206221055273_Upgrade_To_ABP_7.3.resx">
       <DependentUpon>202206221055273_Upgrade_To_ABP_7.3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303121831159_TYS7.5.resx">
+      <DependentUpon>202303121831159_TYS7.5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303121959210_TYS7.6.resx">
+      <DependentUpon>202303121959210_TYS7.6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,9 +13,9 @@ namespace TakeyourStand.Migrations
                 "dbo.AbpAuditLogs",
                 c => new
                     {
-                        Id = c.Long(nullable: false, identity: true),
+                        Id = c.Int(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(),
+                        UserId= c.Long(),
                         ServiceName = c.String(maxLength: 256),
                         MethodName = c.String(maxLength: 256),
                         Parameters = c.String(maxLength: 1024),
@@ -25,7 +25,7 @@ namespace TakeyourStand.Migrations
                         ClientName = c.String(maxLength: 128),
                         BrowserInfo = c.String(maxLength: 512),
                         Exception = c.String(maxLength: 2000),
-                        ImpersonatorUserId = c.Long(),
+                        ImpersonatorUserId= c.Long(),
                         ImpersonatorTenantId = c.Int(),
                         CustomData = c.String(maxLength: 2000),
                     },
@@ -48,7 +48,7 @@ namespace TakeyourStand.Migrations
                         IsAbandoned = c.Boolean(nullable: false),
                         Priority = c.Byte(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     })
                 .PrimaryKey(t => t.Id)
                 .Index(t => new { t.IsAbandoned, t.NextTryTime });
@@ -62,7 +62,7 @@ namespace TakeyourStand.Migrations
                         Name = c.String(nullable: false, maxLength: 128),
                         Value = c.String(nullable: false, maxLength: 2000),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                         EditionId = c.Int(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     },
@@ -84,12 +84,12 @@ namespace TakeyourStand.Migrations
                         Name = c.String(nullable: false, maxLength: 32),
                         DisplayName = c.String(nullable: false, maxLength: 64),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -108,12 +108,12 @@ namespace TakeyourStand.Migrations
                         Icon = c.String(maxLength: 128),
                         IsDisabled = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -133,9 +133,9 @@ namespace TakeyourStand.Migrations
                         Key = c.String(nullable: false, maxLength: 256),
                         Value = c.String(nullable: false),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -159,7 +159,7 @@ namespace TakeyourStand.Migrations
                         ExcludedUserIds = c.String(),
                         TenantIds = c.String(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -169,13 +169,13 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         NotificationName = c.String(maxLength: 96),
                         EntityTypeName = c.String(maxLength: 250),
                         EntityTypeAssemblyQualifiedName = c.String(maxLength: 512),
                         EntityId = c.String(maxLength: 96),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -194,12 +194,12 @@ namespace TakeyourStand.Migrations
                         Code = c.String(nullable: false, maxLength: 95),
                         DisplayName = c.String(nullable: false, maxLength: 128),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -219,9 +219,9 @@ namespace TakeyourStand.Migrations
                         Name = c.String(nullable: false, maxLength: 128),
                         IsGranted = c.Boolean(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
-                        RoleId = c.Int(),
-                        UserId = c.Long(),
+                        CreatorUserId= c.Long(),
+                        RoleId= c.Int(),
+                        UserId= c.Long(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     },
                 annotations: new Dictionary<string, object>
@@ -248,12 +248,12 @@ namespace TakeyourStand.Migrations
                         IsStatic = c.Boolean(nullable: false),
                         IsDefault = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -293,12 +293,12 @@ namespace TakeyourStand.Migrations
                         IsActive = c.Boolean(nullable: false),
                         LastLoginTime = c.DateTime(),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -319,11 +319,11 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         ClaimType = c.String(maxLength: 256),
                         ClaimValue = c.String(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -339,7 +339,7 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         LoginProvider = c.String(nullable: false, maxLength: 128),
                         ProviderKey = c.String(nullable: false, maxLength: 256),
                     },
@@ -357,10 +357,10 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         RoleId = c.Int(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -376,13 +376,13 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(),
+                        UserId= c.Long(),
                         Name = c.String(nullable: false, maxLength: 256),
                         Value = c.String(maxLength: 2000),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -406,7 +406,7 @@ namespace TakeyourStand.Migrations
                         EntityId = c.String(maxLength: 96),
                         Severity = c.Byte(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -425,12 +425,12 @@ namespace TakeyourStand.Migrations
                         ConnectionString = c.String(maxLength: 1024),
                         IsActive = c.Boolean(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -452,18 +452,18 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         UserLinkId = c.Long(),
                         UserName = c.String(maxLength: 256),
                         EmailAddress = c.String(maxLength: 256),
                         LastLoginTime = c.DateTime(),
                         IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
+                        DeleterUserId= c.Long(),
                         DeletionTime = c.DateTime(),
                         LastModificationTime = c.DateTime(),
-                        LastModifierUserId = c.Long(),
+                        LastModifierUserId= c.Long(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
@@ -478,7 +478,7 @@ namespace TakeyourStand.Migrations
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
                         TenancyName = c.String(maxLength: 64),
-                        UserId = c.Long(),
+                        UserId= c.Long(),
                         UserNameOrEmailAddress = c.String(maxLength: 255),
                         ClientIpAddress = c.String(maxLength: 64),
                         ClientName = c.String(maxLength: 128),
@@ -500,7 +500,7 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         TenantNotificationId = c.Guid(nullable: false),
                         State = c.Int(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
@@ -518,11 +518,11 @@ namespace TakeyourStand.Migrations
                     {
                         Id = c.Long(nullable: false, identity: true),
                         TenantId = c.Int(),
-                        UserId = c.Long(nullable: false),
+                        UserId= c.Long(nullable: false),
                         OrganizationUnitId = c.Long(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {

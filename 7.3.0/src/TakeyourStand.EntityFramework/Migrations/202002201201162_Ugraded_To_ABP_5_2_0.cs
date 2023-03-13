@@ -64,7 +64,7 @@
                         Webhooks = c.String(),
                         Headers = c.String(),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     })
                 .PrimaryKey(t => t.Id);
             

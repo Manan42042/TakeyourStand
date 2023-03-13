@@ -58,6 +58,8 @@ namespace TakeyourStand.Migrations
             DropIndex("dbo.AbpLanguageTexts", new[] { "TenantId" });
             DropIndex("dbo.AbpLanguages", new[] { "IsDeleted" });
             DropIndex("dbo.AbpLanguages", new[] { "TenantId" });
+
+
             DropIndex("dbo.AbpEditions", new[] { "IsDeleted" });
             DropIndex("dbo.AbpFeatures", new[] { "TenantId" });
             DropIndex("dbo.AbpAuditLogs", new[] { "TenantId" });

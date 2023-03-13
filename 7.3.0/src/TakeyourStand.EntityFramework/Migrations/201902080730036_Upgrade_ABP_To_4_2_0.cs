@@ -13,13 +13,13 @@ namespace TakeyourStand.Migrations
                 "dbo.AbpOrganizationUnitRoles",
                 c => new
                     {
-                        Id = c.Long(nullable: false, identity: true),
+                        Id = c.Int(nullable: false, identity: true),
                         TenantId = c.Int(),
                         RoleId = c.Int(nullable: false),
-                        OrganizationUnitId = c.Long(nullable: false),
+                        OrganizationUnitId = c.Int(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
                         CreationTime = c.DateTime(nullable: false),
-                        CreatorUserId = c.Long(),
+                        CreatorUserId= c.Long(),
                     },
                 annotations: new Dictionary<string, object>
                 {
