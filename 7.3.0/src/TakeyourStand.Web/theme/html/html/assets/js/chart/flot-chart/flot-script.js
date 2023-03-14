@@ -51,7 +51,7 @@
         grid: {
             borderWidth: 0
         },
-            colors: [ CubaAdminConfig.primary ]
+            colors: [ Take Your StandAdminConfig.primary ]
     });
     function update() {
         plot.setData([getRandomData()]);
@@ -62,7 +62,7 @@
 })(jQuery);
 if ($("#flot-categories").length > 0) {
     var a = {
-        color: CubaAdminConfig.primary,
+        color: Take Your StandAdminConfig.primary,
         data: [
         ["Jan", 25],
         ["Feb", 8],
@@ -107,7 +107,7 @@ if ($("#annotations-chart").length > 0) {
         var c = [{
             data: a,
             label: "Pressure",
-            color: CubaAdminConfig.primary
+            color: Take Your StandAdminConfig.primary
         }],
         d = [{
             color: "#ffffff",
@@ -169,7 +169,7 @@ if ($("#annotations-chart").length > 0) {
 if ($("#flot-basic-chart").length > 0) {
     for (var a = [], b = 0; b < 14; b += .5) a.push([b, Math.sin(b)]);
         var c = {
-            color: CubaAdminConfig.secondary,
+            color: Take Your StandAdminConfig.secondary,
             data: [
             [0, 3],
             [4, 8],
@@ -178,7 +178,7 @@ if ($("#flot-basic-chart").length > 0) {
             ]
         },
         d = {
-            color: CubaAdminConfig.primary ,
+            color: Take Your StandAdminConfig.primary ,
             data: [
             [0, 12],
             [7, 0],
@@ -271,7 +271,7 @@ $(function() {
 
                         borderWidth: 0
                     },
-                    colors: [CubaAdminConfig.primary, "#f8d62b" ,"#a927f9" ,"#51bb25" , CubaAdminConfig.secondary , "#dc3545" ,"#f8d62b"]
+                    colors: [Take Your StandAdminConfig.primary, "#f8d62b" ,"#a927f9" ,"#51bb25" , Take Your StandAdminConfig.secondary , "#dc3545" ,"#f8d62b"]
 
                 });
             }
@@ -307,10 +307,10 @@ $(function() {
                 h = !1,
                 i = !1,
                 j = [{
-                    color: CubaAdminConfig.secondary ,
+                    color: Take Your StandAdminConfig.secondary ,
                     data: b
                 }, {
-                    color: CubaAdminConfig.primary ,
+                    color: Take Your StandAdminConfig.primary ,
                     data: d
                 }, {
                     color: "#51bb25",
@@ -444,7 +444,7 @@ $(function() {
                 show: true
             }
         },
-        colors: [ CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary ]
+        colors: [ Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary ]
     });
     $.plot('#default-pie-legend-flot-chart', data, {
         series: {
@@ -455,7 +455,7 @@ $(function() {
         legend: {
             show: false
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#hidden-label-radius-flot-chart', data, {
         series: {
@@ -472,7 +472,7 @@ $(function() {
         legend: {
             show: false
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#default-pie-flot-chart-hover', data, {
         series: {
@@ -484,7 +484,7 @@ $(function() {
             hoverable: true,
             clickable: true
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#custom-label1pie', data, {
         series: {
@@ -503,7 +503,7 @@ $(function() {
         legend: {
             show: false
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#label-radius-flot-chart', data, {
         series: {
@@ -522,7 +522,7 @@ $(function() {
         legend: {
             show: false
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#title-pie-flot-chart', data, {
         series: {
@@ -546,7 +546,7 @@ $(function() {
         legend: {
             show: false
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
     $.plot('#dount-hole-flot-chart', data, {
         series: {
@@ -555,7 +555,7 @@ $(function() {
                 show: true
             }
         },
-        colors: [CubaAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , CubaAdminConfig.secondary]
+        colors: [Take Your StandAdminConfig.primary , "#51bb25" ,"#f8d62b" ,"#a927f9" ,"#dc3545", "#6c757d" , Take Your StandAdminConfig.secondary]
     });
 });
 
@@ -607,7 +607,7 @@ if ($("#multiple-real-timeupdate ").length > 0) {
         grid: {
             borderWidth: 0
         },
-        colors: [ CubaAdminConfig.primary , CubaAdminConfig.secondary ]
+        colors: [ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ]
     }),
     k = function() {
         j.setData([c(), e()]), j.draw(), setTimeout(k, f)

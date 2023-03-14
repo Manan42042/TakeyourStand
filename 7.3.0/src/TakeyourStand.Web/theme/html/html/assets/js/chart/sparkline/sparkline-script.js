@@ -6,15 +6,15 @@
             width: '100%',
             height: '100%',
             tooltipClassname: 'chart-sparkline',
-            lineColor: CubaAdminConfig.primary,
+            lineColor: Take Your StandAdminConfig.primary,
             fillColor: 'rgba(145, 46, 252, 0.40)',
-            highlightLineColor: CubaAdminConfig.primary,
-            highlightSpotColor: CubaAdminConfig.primary,
-            targetColor: CubaAdminConfig.primary,
-            performanceColor: CubaAdminConfig.primary,
-            boxFillColor: CubaAdminConfig.primary,
-            medianColor: CubaAdminConfig.primary,
-            minSpotColor: CubaAdminConfig.primary
+            highlightLineColor: Take Your StandAdminConfig.primary,
+            highlightSpotColor: Take Your StandAdminConfig.primary,
+            targetColor: Take Your StandAdminConfig.primary,
+            performanceColor: Take Your StandAdminConfig.primary,
+            boxFillColor: Take Your StandAdminConfig.primary,
+            medianColor: Take Your StandAdminConfig.primary,
+            minSpotColor: Take Your StandAdminConfig.primary
         });
     });
     var mrefreshinterval = 500;
@@ -48,15 +48,15 @@
                 width: '100%',
                 height: '100%',
                 tooltipClassname: 'chart-sparkline',
-                lineColor: CubaAdminConfig.primary ,
+                lineColor: Take Your StandAdminConfig.primary ,
                 fillColor: 'rgba(145, 46, 252, 0.40)',
-                highlightLineColor: CubaAdminConfig.primary ,
-                highlightSpotColor: CubaAdminConfig.primary ,
-                targetColor: CubaAdminConfig.primary ,
-                performanceColor: CubaAdminConfig.primary ,
-                boxFillColor: CubaAdminConfig.primary ,
-                medianColor: CubaAdminConfig.primary ,
-                minSpotColor: CubaAdminConfig.primary
+                highlightLineColor: Take Your StandAdminConfig.primary ,
+                highlightSpotColor: Take Your StandAdminConfig.primary ,
+                targetColor: Take Your StandAdminConfig.primary ,
+                performanceColor: Take Your StandAdminConfig.primary ,
+                boxFillColor: Take Your StandAdminConfig.primary ,
+                medianColor: Take Your StandAdminConfig.primary ,
+                minSpotColor: Take Your StandAdminConfig.primary
             });
         }
         lastmousetime = timenow;
@@ -70,7 +70,7 @@
         height: '100%',
         tooltipClassname: 'chart-sparkline',
         chartRangeMax: '50',
-        lineColor: CubaAdminConfig.secondary,
+        lineColor: Take Your StandAdminConfig.secondary,
         fillColor: 'rgba(247, 49, 100, 0.30)',
         highlightLineColor: 'rgba(247, 49, 100, 0.30)',
         highlightSpotColor: 'rgba(247, 49, 100, 0.8)'
@@ -83,7 +83,7 @@
         composite: '!0',
         tooltipClassname: 'chart-sparkline',
         chartRangeMax: '40',
-        lineColor: CubaAdminConfig.primary,
+        lineColor: Take Your StandAdminConfig.primary,
         fillColor: 'rgba(145, 46, 252, 0.40)',
         highlightLineColor: 'rgba(145, 46, 252, 0.40)',
         highlightSpotColor: 'rgba(145, 46, 252, 0.8)'
@@ -98,27 +98,27 @@ var sparkline_chart = {
             width: '100%',
             height: '100%',
             tooltipClassname: 'chart-sparkline',
-            lineColor: CubaAdminConfig.primary,
+            lineColor: Take Your StandAdminConfig.primary,
             fillColor: 'transparent',
-            highlightLineColor: CubaAdminConfig.primary,
-            highlightSpotColor: CubaAdminConfig.primary,
-            targetColor: CubaAdminConfig.primary,
-            performanceColor: CubaAdminConfig.primary,
-            boxFillColor: CubaAdminConfig.primary,
-            medianColor: CubaAdminConfig.primary,
-            minSpotColor: CubaAdminConfig.primary
+            highlightLineColor: Take Your StandAdminConfig.primary,
+            highlightSpotColor: Take Your StandAdminConfig.primary,
+            targetColor: Take Your StandAdminConfig.primary,
+            performanceColor: Take Your StandAdminConfig.primary,
+            boxFillColor: Take Your StandAdminConfig.primary,
+            medianColor: Take Your StandAdminConfig.primary,
+            minSpotColor: Take Your StandAdminConfig.primary
         });
     }), $("#bar-chart-sparkline").sparkline([5, 2, 2, 4, 9, 5, 7, 5, 2, 2, 6], {
         type: 'bar',
         barWidth: '60',
         height: '100%',
         tooltipClassname: 'chart-sparkline',
-        barColor: CubaAdminConfig.primary
+        barColor: Take Your StandAdminConfig.primary
     }), $("#pie-sparkline-chart").sparkline([1.5, 1, 1, 0.5], {
         type: 'pie',
         width: '100%',
         height: '100%',
-        sliceColors: ['#51bb25','#f8d62b', CubaAdminConfig.secondary , CubaAdminConfig.primary ],
+        sliceColors: ['#51bb25','#f8d62b', Take Your StandAdminConfig.secondary , Take Your StandAdminConfig.primary ],
         tooltipClassname: 'chart-sparkline'
     });
     }

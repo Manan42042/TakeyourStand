@@ -538,7 +538,7 @@
         },
         {
             "Task": "Shopify",
-            "Email": "Cuba@gmail..com",
+            "Email": "Take Your Stand@gmail..com",
             "Phone": "+91 7136982564",
             "Assign": "Mark Jecno",
             "Date": "26/09/2022",

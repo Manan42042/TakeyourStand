@@ -7,7 +7,7 @@
 // │ Licensed under the MIT (https://github.com/DmitryBaranovskiy/raphael/blob/master/license.txt) license.│ \\
 // └───────────────────────────────────────────────────────────────────────────────────────────────────────┘ \\
 
-(function webpackCubaModuleDefinition(root, factory) {
+(function webpackTake Your StandModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)

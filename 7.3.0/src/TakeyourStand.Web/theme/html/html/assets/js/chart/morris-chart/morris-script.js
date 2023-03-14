@@ -28,7 +28,7 @@ var morris_chart = {
             xkey: 'x',
             ykeys: ['y', 'z'],
             labels: ['Y', 'Z'],
-            lineColors: [CubaAdminConfig.secondary , CubaAdminConfig.primary ],
+            lineColors: [Take Your StandAdminConfig.secondary , Take Your StandAdminConfig.primary ],
         }), Morris.Line({
             element: "morris-line-chart",
             data: [{
@@ -68,7 +68,7 @@ var morris_chart = {
                 }],
             xkey: "y",
             ykeys: ["a", "b"],
-            lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+            lineColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ],
             labels: ["Series A", "Series B"]
         }), Morris.Bar({
             element: "morris-simple-bar-chart",
@@ -98,7 +98,7 @@ var morris_chart = {
                 }],
             xkey: "x",
             ykeys: ["y", "z", "a"],
-            barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#51bb25"],
+            barColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ,"#51bb25"],
             labels: ["Y", "Z", "A"]
         }), Morris.Bar({
             element: "bar-line-chart-morris",
@@ -141,7 +141,7 @@ var morris_chart = {
             xkey: "x",
             ykeys: ["y"],
             labels: ["Y"],
-            barColors: [CubaAdminConfig.primary]
+            barColors: [Take Your StandAdminConfig.primary]
         }), $(function() {
             var b = [{
                 period: "2012-10-01",
@@ -177,7 +177,7 @@ var morris_chart = {
             Morris.Bar({
                 element: 'x-lable-morris-chart',
                 data: b,
-                barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+                barColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ],
                 xkey: "period",
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
@@ -195,7 +195,7 @@ var morris_chart = {
                 ykeys: ["y"],
                 labels: ["sin(x)"],
                 parseTime: !1,
-                lineColors: [CubaAdminConfig.primary],
+                lineColors: [Take Your StandAdminConfig.primary],
                 hoverCallback: function(a, b, c, d) {
                     return c.replace("sin(x)", "1.5 + 1.5 sin(" + d.x + ")")
                 },
@@ -257,7 +257,7 @@ var morris_chart = {
                 element: 'x-Labels-Diagonally-morris-chart',
                 data: b,
                 xkey: "period",
-                lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary],
+                lineColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary],
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
                 xLabelAngle: 60
@@ -283,7 +283,7 @@ var morris_chart = {
                     }],
                 backgroundColor: "rgba(68, 102, 242, 0.5)",
                 labelColor: "#999999",
-                colors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#f8d62b" ,"#51bb25" ,"rgba(248, 214, 43, 1)", "#51bb25" ,"#f8d62b"],
+                colors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ,"#f8d62b" ,"#51bb25" ,"rgba(248, 214, 43, 1)", "#51bb25" ,"#f8d62b"],
                 formatter: function(a) {
                     return a + "%"
                 }
@@ -312,7 +312,7 @@ var morris_chart = {
                         ymin: -1,
                         ymax: 1,
                         hideHover: !0,
-                        lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+                        lineColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ],
                     }),
                     h = function() {
                         e++, g.setData(f(5 * e)), $(".reloadStatus").text(e + " reloads")
@@ -373,7 +373,7 @@ var morris_chart = {
                 xkey: "x",
                 ykeys: ["y", "z", "a"],
                 labels: ["A", "Y", "Z"],
-                barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#51bb25" ,"#f8d62b" ,"#a927f9", CubaAdminConfig.secondary , CubaAdminConfig.primary ],
+                barColors: [Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ,"#51bb25" ,"#f8d62b" ,"#a927f9", Take Your StandAdminConfig.secondary , Take Your StandAdminConfig.primary ],
                 stacked: !0
             });
         });

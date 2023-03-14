@@ -43,16 +43,16 @@ var barData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.4)",
-        strokeColor: CubaAdminConfig.primary,
+        strokeColor: Take Your StandAdminConfig.primary,
         highlightFill: "rgba(115, 102 ,255, 0.6)",
-        highlightStroke: CubaAdminConfig.primary ,
+        highlightStroke: Take Your StandAdminConfig.primary ,
         data: [35, 59, 80, 81, 56, 55, 40]
     }, {
         label: "My Second dataset",
         fillColor: "rgba(247, 49, 100, 0.4)",
-        strokeColor: CubaAdminConfig.secondary ,
+        strokeColor: Take Your StandAdminConfig.secondary ,
         highlightFill: "rgba(247, 49, 100, 0.6)",
-        highlightStroke: CubaAdminConfig.secondary,
+        highlightStroke: Take Your StandAdminConfig.secondary,
         data: [28, 48, 40, 19, 86, 27, 90]
     }]
 };
@@ -73,8 +73,8 @@ var myBarChart = new Chart(barCtx).Bar(barData, barOptions);
 var polarData = [
     {
         value: 300,
-        color: CubaAdminConfig.primary,
-        highlight: CubaAdminConfig.primary,
+        color: Take Your StandAdminConfig.primary,
+        highlight: Take Your StandAdminConfig.primary,
         label: "Yellow"
     }, {
         value: 50,
@@ -93,8 +93,8 @@ var polarData = [
         label: "Grey"
     }, {
         value: 120,
-        color: CubaAdminConfig.secondary ,
-        highlight: CubaAdminConfig.secondary ,
+        color: Take Your StandAdminConfig.secondary ,
+        highlight: Take Your StandAdminConfig.secondary ,
         label: "Dark Grey"
     }
 ];
@@ -121,8 +121,8 @@ var lineGraphData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.3)",
-        strokeColor: CubaAdminConfig.primary ,
-        pointColor: CubaAdminConfig.primary ,
+        strokeColor: Take Your StandAdminConfig.primary ,
+        pointColor: Take Your StandAdminConfig.primary ,
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#000",
@@ -130,11 +130,11 @@ var lineGraphData = {
     }, {
         label: "My Second dataset",
         fillColor: "rgba(247, 49, 100, 0.3)",
-        strokeColor: CubaAdminConfig.secondary ,
-        pointColor: CubaAdminConfig.secondary ,
+        strokeColor: Take Your StandAdminConfig.secondary ,
+        pointColor: Take Your StandAdminConfig.secondary ,
         pointStrokeColor: "#fff",
         pointHighlightFill: "#000",
-        pointHighlightStroke: CubaAdminConfig.secondary,
+        pointHighlightStroke: Take Your StandAdminConfig.secondary,
         data: [28, 48, 40, 19, 86, 27, 90]
     }]
 };
@@ -162,10 +162,10 @@ var radarData = {
     datasets: [{
         label: "My First dataset",
         fillColor: "rgba(115, 102 ,255, 0.4)",
-        strokeColor: CubaAdminConfig.primary,
-        pointColor: CubaAdminConfig.primary,
-        pointStrokeColor: CubaAdminConfig.primary,
-        pointHighlightFill: CubaAdminConfig.primary ,
+        strokeColor: Take Your StandAdminConfig.primary,
+        pointColor: Take Your StandAdminConfig.primary,
+        pointStrokeColor: Take Your StandAdminConfig.primary,
+        pointHighlightFill: Take Your StandAdminConfig.primary ,
         pointHighlightStroke: "rgba(115, 102 ,255, 0.4)",
         data: [12, 3, 5, 18, 7]
     }]
@@ -225,14 +225,14 @@ var pieOptions = {
 var doughnutData = [
     {
         value: 300,
-        color: CubaAdminConfig.primary ,
-        highlight: CubaAdminConfig.primary ,
+        color: Take Your StandAdminConfig.primary ,
+        highlight: Take Your StandAdminConfig.primary ,
         label: "Primary"
     },
     {
         value: 50,
-        color: CubaAdminConfig.secondary ,
-        highlight: CubaAdminConfig.secondary ,
+        color: Take Your StandAdminConfig.secondary ,
+        highlight: Take Your StandAdminConfig.secondary ,
         label: "Secondary"
     },
     {
@@ -264,13 +264,13 @@ var myLineChart = {
         data: [10, 20, 40, 30, 0, 20, 10, 30, 10]
     },{
         fillColor: "rgba(247, 49, 100, 0.2)",
-        strokeColor: CubaAdminConfig.secondary ,
-        pointColor: CubaAdminConfig.secondary ,
+        strokeColor: Take Your StandAdminConfig.secondary ,
+        pointColor: Take Your StandAdminConfig.secondary ,
         data: [20, 40, 10, 20, 40, 30, 40, 10, 20]
     }, {
         fillColor: "rgba(115, 102 ,255, 0.2)",
-        strokeColor: CubaAdminConfig.primary ,
-        pointColor: CubaAdminConfig.primary ,
+        strokeColor: Take Your StandAdminConfig.primary ,
+        pointColor: Take Your StandAdminConfig.primary ,
         data: [60, 10, 40, 30, 80, 30, 20, 90, 0]
     }]
 }

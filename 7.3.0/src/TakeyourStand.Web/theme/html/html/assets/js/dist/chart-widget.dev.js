@@ -59,7 +59,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       type: 'solid',
       opacity: 0.2
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     series: [{
       data: [70, 60, 82, 80, 60, 90, 70, 120, 50, 60, 0]
     }],
@@ -112,7 +112,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       type: 'solid',
       opacity: 0.2
     },
-    colors: [CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.secondary],
     series: [{
       name: 'series1',
       data: [70, 60, 82, 80, 60, 90, 70, 120, 50, 60, 0]
@@ -238,7 +238,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     },
     fill: {
-      colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25'],
+      colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary, '#51bb25'],
       type: 'gradient',
       gradient: {
         shade: 'light',
@@ -325,7 +325,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       data: [55, 69, 45, 61, 43, 54, 37, 52, 44, 61, 43]
     }],
     fill: {
-      colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+      colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
       type: 'gradient',
       gradient: {
         shade: 'light',
@@ -337,7 +337,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         stops: [0, 100]
       }
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
     labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09 ', '10', '11', '12'],
     markers: {
       size: 0
@@ -384,7 +384,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       curve: 'straight'
     },
     fill: {
-      colors: [CubaAdminConfig.primary],
+      colors: [Take Your StandAdminConfig.primary],
       type: 'gradient',
       gradient: {
         shade: 'light',
@@ -404,7 +404,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       text: 'Fundamental Analysis of Stocks',
       align: 'left'
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     labels: series.monthDataSeries1.dates,
     xaxis: {
       type: 'datetime'
@@ -432,7 +432,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         stops: [0, 100]
       }
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25'],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary, '#51bb25'],
     chart: {
       height: 300,
       type: 'radar',
@@ -532,7 +532,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         stops: [0, 100]
       }
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#544fff'],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary, '#51bb25', '#544fff'],
     title: {
       text: 'Simple Bubble Chart'
     },
@@ -558,8 +558,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     plotOptions: {
       candlestick: {
         colors: {
-          upward: CubaAdminConfig.primary,
-          downward: CubaAdminConfig.secondary
+          upward: Take Your StandAdminConfig.primary,
+          downward: Take Your StandAdminConfig.secondary
         }
       }
     },
@@ -871,7 +871,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     },
     fill: {
-      colors: [CubaAdminConfig.primary],
+      colors: [Take Your StandAdminConfig.primary],
       type: 'gradient',
       gradient: {
         shade: 'light',
@@ -951,7 +951,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     fill: {
       opacity: 0.9
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
     markers: {
       size: 0,
       hover: {
@@ -1050,7 +1050,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         stops: [0, 100]
       }
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary]
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary]
   };
   var chartCircle = new ApexCharts(document.querySelector('#circlechart'), optionsCircle);
   chartCircle.render();
@@ -1073,15 +1073,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
       }
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     stroke: {
       width: 0
     },
     fill: {
-      colors: [CubaAdminConfig.primary],
+      colors: [Take Your StandAdminConfig.primary],
       type: 'gradient',
       gradient: {
-        gradientToColors: [CubaAdminConfig.primary]
+        gradientToColors: [Take Your StandAdminConfig.primary]
       }
     },
     series: [{

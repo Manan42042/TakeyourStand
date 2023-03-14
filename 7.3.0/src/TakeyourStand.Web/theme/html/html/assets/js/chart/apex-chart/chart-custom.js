@@ -1483,7 +1483,7 @@ var options = {
     legend: {
         horizontalAlign: 'left'
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors:[ Take Your StandAdminConfig.primary ]
 
 }
 
@@ -1526,7 +1526,7 @@ var options1 = {
             format: 'dd/MM/yy HH:mm'
         },
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary ]
+    colors:[ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary ]
 }
 
 var chart1 = new ApexCharts(
@@ -1559,7 +1559,7 @@ var options2 = {
     xaxis: {
         categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan', 'United States', 'China', 'Germany'],
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors:[ Take Your StandAdminConfig.primary ]
 }
 
 var chart2 = new ApexCharts(
@@ -1622,7 +1622,7 @@ var options3 = {
             }
         }
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25']
+    colors:[ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary , '#51bb25']
 }
 
 var chart3 = new ApexCharts(
@@ -1713,7 +1713,7 @@ var options = {
     stroke: {
         width: 0
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25', '#f8d62b']
+    colors:[ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary , '#51bb25', '#f8d62b']
 }
 
 var chart = new ApexCharts(
@@ -1735,8 +1735,8 @@ var options4 = {
     plotOptions: {
         candlestick: {
             colors: {
-                upward: CubaAdminConfig.primary ,
-                downward: CubaAdminConfig.secondary
+                upward: Take Your StandAdminConfig.primary ,
+                downward: Take Your StandAdminConfig.secondary
             }
         }
     },
@@ -2041,7 +2041,7 @@ var options5 = {
             sizeOffset: 4
         }
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors:[ Take Your StandAdminConfig.primary ]
 
 }
 
@@ -2163,7 +2163,7 @@ var options6 = {
     xaxis: {
         type: 'datetime',
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors:[ Take Your StandAdminConfig.primary ]
 }
 
 var chart6 = new ApexCharts(
@@ -2244,7 +2244,7 @@ var options7 = {
             useSeriesColors: true
         },
     },
-    colors:[CubaAdminConfig.secondary , '#51bb25' , CubaAdminConfig.primary ]
+    colors:[Take Your StandAdminConfig.secondary , '#51bb25' , Take Your StandAdminConfig.primary ]
 }
 
 var chart7 = new ApexCharts(
@@ -2273,7 +2273,7 @@ var options8 = {
             }
         }
     }],
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25', '#a927f9', '#f8d62b']
+    colors:[ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.secondary , '#51bb25', '#a927f9', '#f8d62b']
 }
 
 var chart8 = new ApexCharts(
@@ -2301,7 +2301,7 @@ var options9 = {
             }
         }
     }],
-    colors:['#dc3545', '#f8d62b', CubaAdminConfig.primary , '#51bb25', '#a927f9']
+    colors:['#dc3545', '#f8d62b', Take Your StandAdminConfig.primary , '#51bb25', '#a927f9']
 }
 
 var chart9 = new ApexCharts(
@@ -2425,7 +2425,7 @@ var options11 = {
             }
         }
     }],
-    colors:[ CubaAdminConfig.secondary , '#51bb25', '#f8d62b', CubaAdminConfig.primary ]
+    colors:[ Take Your StandAdminConfig.secondary , '#51bb25', '#f8d62b', Take Your StandAdminConfig.primary ]
 
 
 }

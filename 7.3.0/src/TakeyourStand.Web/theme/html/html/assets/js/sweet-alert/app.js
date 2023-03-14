@@ -5,16 +5,16 @@ var SweetAlert_custom = {
   init: function () {
     (document.querySelector(".sweet-1").onclick = function () {
       swal({
-        title: "Welcome! to the cuba theme",
+        title: "Welcome! to the Take Your Stand theme",
       });
     }),
       (document.querySelector(".sweet-2").onclick = function () {
-        swal("It's Magic!", "Thank you for visiting cuba theme");
+        swal("It's Magic!", "Thank you for visiting Take Your Stand theme");
       }),
       (document.querySelector(".sweet-4").onclick = function () {
         swal("Please Click on this button it's big surprise for you.").then(
           (value) => {
-            swal(`Thank you for visit cuba theme: ${value}`);
+            swal(`Thank you for visit Take Your Stand theme: ${value}`);
           }
         );
       }),

@@ -2817,6 +2817,15 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <Content Include="Logo\azwjqeed.png" />
+    <Content Include="Logo\favicon.png" />
+    <Content Include="Logo\Logo.png" />
+    <Content Include="Logo\Logo1.png" />
+    <Content Include="Logo\Main_Logo.png" />
+    <Content Include="Logo\Main_Logo1.png" />
+    <Content Include="Logo\output-onlinepngtools %281%29.png" />
+    <Content Include="Logo\output-onlinepngtools %282%29.png" />
+    <Content Include="Logo\output-onlinepngtools.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="log4net.Production.config" />

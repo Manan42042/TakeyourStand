@@ -63,7 +63,7 @@ var options2 = {
       endingShape: 'rounded'
     },
   },
-  colors: [ CubaAdminConfig.primary , CubaAdminConfig.primary , "#F2F3F7", "#F2F3F7"],
+  colors: [ Take Your StandAdminConfig.primary , Take Your StandAdminConfig.primary , "#F2F3F7", "#F2F3F7"],
   dataLabels: {
     enabled: false
   },
@@ -439,7 +439,7 @@ var options = {
         }
       }           
     },
-    colors:[CubaAdminConfig.primary,'#AAAFCB'],
+    colors:[Take Your StandAdminConfig.primary,'#AAAFCB'],
     yaxis: {
       tickAmount: 3,   
       labels: {

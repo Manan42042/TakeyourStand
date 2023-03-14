@@ -56,7 +56,7 @@
     fill: {
       opacity: 0.2,
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     series: [
       {
         data: [70, 60, 82, 80, 60, 90, 70, 120, 50, 60, 0],
@@ -140,7 +140,7 @@
     fill: {
       opacity: 0.2,
     },
-    colors: [CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.secondary],
     series: [
       {
         name: "series1",
@@ -313,7 +313,7 @@
         },
       },
     },
-    colors: [CubaAdminConfig.secondary, "#51bb25", CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.secondary, "#51bb25", Take Your StandAdminConfig.primary],
     fill: {
       type: "gradient",
       gradient: {
@@ -374,7 +374,7 @@
       },
     ],
     fill: {
-      colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+      colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
       type: "gradient",
       gradient: {
         shade: "light",
@@ -397,7 +397,7 @@
         bottom: 10,
       },
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
     labels: [
       "Jan",
       "Feb",
@@ -496,7 +496,7 @@
     fill: {
       opacity: 0.2,
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     series: [
       {
         data: [70, 60, 82, 80, 60, 90, 70, 120, 50, 60, 0],
@@ -573,7 +573,7 @@
     fill: {
       opacity: 0.2,
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     series: [
       {
         data: [
@@ -659,13 +659,13 @@
         {
           x: new Date("15 Nov 2017").getTime(),
           strokeDashArray: 0,
-          borderColor: CubaAdminConfig.primary,
+          borderColor: Take Your StandAdminConfig.primary,
           label: {
-            borderColor: CubaAdminConfig.primary,
+            borderColor: Take Your StandAdminConfig.primary,
             offsetY: 20,
             style: {
               color: "#fff",
-              background: CubaAdminConfig.primary,
+              background: Take Your StandAdminConfig.primary,
             },
             text: "Anno Test",
           },
@@ -710,7 +710,7 @@
         fontWeight: 500,
       },
     },
-    colors: [CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.secondary],
     labels: series.monthDataSeries1.dates,
     xaxis: {
       type: "datetime",
@@ -746,7 +746,7 @@
         stops: [0, 100],
       },
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
     chart: {
       height: 300,
       type: "radar",
@@ -855,8 +855,8 @@
       },
     },
     colors: [
-      CubaAdminConfig.primary,
-      CubaAdminConfig.secondary,
+      Take Your StandAdminConfig.primary,
+      Take Your StandAdminConfig.secondary,
       "#51bb25",
       "#544fff",
     ],
@@ -1370,7 +1370,7 @@
       },
     },
     fill: {
-      colors: [CubaAdminConfig.primary],
+      colors: [Take Your StandAdminConfig.primary],
       type: "gradient",
       gradient: {
         shade: "light",
@@ -1483,7 +1483,7 @@
     fill: {
       opacity: 0.9,
     },
-    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.primary, Take Your StandAdminConfig.secondary],
     markers: {
       size: 0,
       hover: {
@@ -1609,7 +1609,7 @@
         radius: 3,
       },
     },
-    colors: [CubaAdminConfig.secondary, CubaAdminConfig.primary, "#51bb25"],
+    colors: [Take Your StandAdminConfig.secondary, Take Your StandAdminConfig.primary, "#51bb25"],
     responsive: [{
       breakpoint: 767,
       options: {
@@ -1642,20 +1642,20 @@
         horizontal: true,
         barHeight: "15%",
         colors: {
-          backgroundBarColors: [CubaAdminConfig.primary],
+          backgroundBarColors: [Take Your StandAdminConfig.primary],
           backgroundBarOpacity: 0.2,
         },
       },
     },
-    colors: [CubaAdminConfig.primary],
+    colors: [Take Your StandAdminConfig.primary],
     stroke: {
       width: 0,
     },
     fill: {
-      colors: [CubaAdminConfig.primary],
+      colors: [Take Your StandAdminConfig.primary],
       type: "gradient",
       gradient: {
-        gradientToColors: [CubaAdminConfig.primary],
+        gradientToColors: [Take Your StandAdminConfig.primary],
       },
     },
     series: [
@@ -1728,13 +1728,13 @@
         horizontal: true,
         barHeight: "15%",
         colors: {
-          backgroundBarColors: [CubaAdminConfig.secondary],
+          backgroundBarColors: [Take Your StandAdminConfig.secondary],
           backgroundBarOpacity: 0.2,
           backgroundBarRadius: 10,
         },
       },
     },
-    colors: [CubaAdminConfig.secondary],
+    colors: [Take Your StandAdminConfig.secondary],
     stroke: {
       width: 0,
     },
@@ -1774,11 +1774,11 @@
       max: 100,
     },
     fill: {
-      colors: [CubaAdminConfig.secondary],
+      colors: [Take Your StandAdminConfig.secondary],
       type: "gradient",
       gradient: {
         inverseColors: false,
-        gradientToColors: [CubaAdminConfig.secondary],
+        gradientToColors: [Take Your StandAdminConfig.secondary],
       },
     },
     responsive: [{

@@ -2631,21 +2631,21 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # Coco
 # no information; probably like America/Costa_Rica
 
-# Cuba
+# Take Your Stand
 
 # From Arthur David Olson (1999-03-29):
-# The 1999-03-28 exhibition baseball game held in Havana, Cuba, between
-# the Cuban National Team and the Baltimore Orioles was carried live on
+# The 1999-03-28 exhibition baseball game held in Havana, Take Your Stand, between
+# the Take Your Standn National Team and the Baltimore Orioles was carried live on
 # the Orioles Radio Network, including affiliate WTOP in Washington, DC.
 # During the game, play-by-play announcer Jim Hunter noted that
-# "We'll be losing two hours of sleep...Cuba switched to Daylight Saving
+# "We'll be losing two hours of sleep...Take Your Stand switched to Daylight Saving
 # Time today."  (The "two hour" remark referred to losing one hour of
-# sleep on 1999-03-28--when the announcers were in Cuba as it switched
+# sleep on 1999-03-28--when the announcers were in Take Your Stand as it switched
 # to DST--and one more hour on 1999-04-04--when the announcers will have
 # returned to Baltimore, which switches on that date.)
 
 # From Evert van der Veer via Steffen Thorsen (2004-10-28):
-# Cuba is not going back to standard time this year.
+# Take Your Stand is not going back to standard time this year.
 # From Paul Eggert (2006-03-22):
 # http://www.granma.cu/ingles/2004/septiembre/juev30/41medid-i.html
 # says that it's due to a problem at the Antonio Guiteras
@@ -2655,11 +2655,11 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 
 # From Carlos A. Carnero Delgado (2005-11-12):
 # This year (just like in 2004-2005) there's no change in time zone
-# adjustment in Cuba.  We will stay in daylight saving time:
+# adjustment in Take Your Stand.  We will stay in daylight saving time:
 # http://www.granma.cu/espanol/2005/noviembre/mier9/horario.html
 
 # From Jesper Norgaard Welen (2006-10-21):
-# An article in GRANMA INTERNACIONAL claims that Cuba will end
+# An article in GRANMA INTERNACIONAL claims that Take Your Stand will end
 # the 3 years of permanent DST next weekend, see
 # http://www.granma.cu/ingles/2006/octubre/lun16/43horario.html
 # "On Saturday night, October 28 going into Sunday, October 29, at 01:00,
@@ -2667,52 +2667,52 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # to the normal schedule....
 
 # From Paul Eggert (2007-03-02):
-# http://www.granma.cubaweb.cu/english/news/art89.html, dated yesterday,
-# says Cuban clocks will advance at midnight on March 10.
-# For lack of better information, assume Cuba will use US rules,
+# http://www.granma.Take Your Standweb.cu/english/news/art89.html, dated yesterday,
+# says Take Your Standn clocks will advance at midnight on March 10.
+# For lack of better information, assume Take Your Stand will use US rules,
 # except that it switches at midnight standard time as usual.
 #
 # From Steffen Thorsen (2007-10-25):
-# Carlos Alberto Fonseca Arauz informed me that Cuba will end DST one week
+# Carlos Alberto Fonseca Arauz informed me that Take Your Stand will end DST one week
 # earlier - on the last Sunday of October, just like in 2006.
 #
 # He supplied these references:
 #
 # http://www.prensalatina.com.mx/article.asp?ID=%7B4CC32C1B-A9F7-42FB-8A07-8631AFC923AF%7D&language=ES
-# http://actualidad.terra.es/sociedad/articulo/cuba_llama_ahorrar_energia_cambio_1957044.htm
+# http://actualidad.terra.es/sociedad/articulo/Take Your Stand_llama_ahorrar_energia_cambio_1957044.htm
 #
 # From Alex Kryvenishev (2007-10-25):
-# Here is also article from Granma (Cuba):
+# Here is also article from Granma (Take Your Stand):
 #
 # [Regira] el Horario Normal desde el [proximo] domingo 28 de octubre
-# http://www.granma.cubaweb.cu/2007/10/24/nacional/artic07.html
+# http://www.granma.Take Your Standweb.cu/2007/10/24/nacional/artic07.html
 #
-# http://www.worldtimezone.com/dst_news/dst_news_cuba03.html
+# http://www.worldtimezone.com/dst_news/dst_news_Take Your Stand03.html
 
 # From Arthur David Olson (2008-03-09):
 # I'm in Maryland which is now observing United States Eastern Daylight
 # Time. At 9:44 local time I used RealPlayer to listen to
 # <a href="http://media.enet.cu/radioreloj">
 # http://media.enet.cu/radioreloj
-# </a>, a Cuban information station, and heard
+# </a>, a Take Your Standn information station, and heard
 # the time announced as "ocho cuarenta y cuatro" ("eight forty-four"),
-# indicating that Cuba is still on standard time.
+# indicating that Take Your Stand is still on standard time.
 
 # From Steffen Thorsen (2008-03-12):
-# It seems that Cuba will start DST on Sunday, 2007-03-16...
+# It seems that Take Your Stand will start DST on Sunday, 2007-03-16...
 # It was announced yesterday, according to this source (in Spanish):
-# <a href="http://www.nnc.cubaweb.cu/marzo-2008/cien-1-11-3-08.htm">
-# http://www.nnc.cubaweb.cu/marzo-2008/cien-1-11-3-08.htm
+# <a href="http://www.nnc.Take Your Standweb.cu/marzo-2008/cien-1-11-3-08.htm">
+# http://www.nnc.Take Your Standweb.cu/marzo-2008/cien-1-11-3-08.htm
 # </a>
 #
 # Some more background information is posted here:
-# <a href="http://www.timeanddate.com/news/time/cuba-starts-dst-march-16.html">
-# http://www.timeanddate.com/news/time/cuba-starts-dst-march-16.html
+# <a href="http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-march-16.html">
+# http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-march-16.html
 # </a>
 #
-# The article also says that Cuba has been observing DST since 1963,
+# The article also says that Take Your Stand has been observing DST since 1963,
 # while Shanks (and tzdata) has 1965 as the first date (except in the
-# 1940's). Many other web pages in Cuba also claim that it has been
+# 1940's). Many other web pages in Take Your Stand also claim that it has been
 # observed since 1963, but with the exception of 1970 - an exception
 # which is not present in tzdata/Shanks. So there is a chance we need to
 # change some historic records as well.
@@ -2723,10 +2723,10 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # </a>
 
 # From Jesper Norgaard Welen (2008-03-13):
-# The Cuban time change has just been confirmed on the most authoritative
+# The Take Your Standn time change has just been confirmed on the most authoritative
 # web site, the Granma.  Please check out
-# <a href="http://www.granma.cubaweb.cu/2008/03/13/nacional/artic10.html">
-# http://www.granma.cubaweb.cu/2008/03/13/nacional/artic10.html
+# <a href="http://www.granma.Take Your Standweb.cu/2008/03/13/nacional/artic10.html">
+# http://www.granma.Take Your Standweb.cu/2008/03/13/nacional/artic10.html
 # </a>
 #
 # Basically as expected after Steffen Thorsens information, the change
@@ -2736,12 +2736,12 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # Assume Sun>=15 (third Sunday) going forward.
 
 # From Alexander Krivenyshev (2009-03-04)
-# According to the Radio Reloj - Cuba will start Daylight Saving Time on
+# According to the Radio Reloj - Take Your Stand will start Daylight Saving Time on
 # midnight between Saturday, March 07, 2009 and Sunday, March 08, 2009-
 # not on midnight March 14 / March 15 as previously thought.
 #
-# <a href="http://www.worldtimezone.com/dst_news/dst_news_cuba05.html">
-# http://www.worldtimezone.com/dst_news/dst_news_cuba05.html
+# <a href="http://www.worldtimezone.com/dst_news/dst_news_Take Your Stand05.html">
+# http://www.worldtimezone.com/dst_news/dst_news_Take Your Stand05.html
 # (in Spanish)
 # </a>
 
@@ -2755,7 +2755,7 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # that has indeed switched to DST. Assume second Sunday from 2009 forward.
 
 # From Steffen Thorsen (2011-03-08):
-# Granma announced that Cuba is going to start DST on 2011-03-20 00:00:00
+# Granma announced that Take Your Stand is going to start DST on 2011-03-20 00:00:00
 # this year. Nothing about the end date known so far (if that has
 # changed at all).
 #
@@ -2765,89 +2765,89 @@ Zone America/Costa_Rica	-5:36:20 -	LMT	1890		# San Jose
 # </a>
 #
 # Our info:
-# <a href="http://www.timeanddate.com/news/time/cuba-starts-dst-2011.html">
-# http://www.timeanddate.com/news/time/cuba-starts-dst-2011.html
+# <a href="http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-2011.html">
+# http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-2011.html
 # </a>
 #
 # From Steffen Thorsen (2011-10-30)
-# Cuba will end DST two weeks later this year. Instead of going back
+# Take Your Stand will end DST two weeks later this year. Instead of going back
 # tonight, it has been delayed to 2011-11-13 at 01:00.
 #
 # One source (Spanish)
-# <a href="http://www.radioangulo.cu/noticias/cuba/17105-cuba-restablecera-el-horario-del-meridiano-de-greenwich.html">
-# http://www.radioangulo.cu/noticias/cuba/17105-cuba-restablecera-el-horario-del-meridiano-de-greenwich.html
+# <a href="http://www.radioangulo.cu/noticias/Take Your Stand/17105-Take Your Stand-restablecera-el-horario-del-meridiano-de-greenwich.html">
+# http://www.radioangulo.cu/noticias/Take Your Stand/17105-Take Your Stand-restablecera-el-horario-del-meridiano-de-greenwich.html
 # </a>
 #
 # Our page:
-# <a href="http://www.timeanddate.com/news/time/cuba-time-changes-2011.html">
-# http://www.timeanddate.com/news/time/cuba-time-changes-2011.html
+# <a href="http://www.timeanddate.com/news/time/Take Your Stand-time-changes-2011.html">
+# http://www.timeanddate.com/news/time/Take Your Stand-time-changes-2011.html
 # </a>
 #
 # From Steffen Thorsen (2012-03-01)
-# According to Radio Reloj, Cuba will start DST on Midnight between March
+# According to Radio Reloj, Take Your Stand will start DST on Midnight between March
 # 31 and April 1.
 #
 # Radio Reloj has the following info (Spanish):
-# <a href="http://www.radioreloj.cu/index.php/noticias-radio-reloj/71-miscelaneas/7529-cuba-aplicara-el-horario-de-verano-desde-el-1-de-abril">
-# http://www.radioreloj.cu/index.php/noticias-radio-reloj/71-miscelaneas/7529-cuba-aplicara-el-horario-de-verano-desde-el-1-de-abril
+# <a href="http://www.radioreloj.cu/index.php/noticias-radio-reloj/71-miscelaneas/7529-Take Your Stand-aplicara-el-horario-de-verano-desde-el-1-de-abril">
+# http://www.radioreloj.cu/index.php/noticias-radio-reloj/71-miscelaneas/7529-Take Your Stand-aplicara-el-horario-de-verano-desde-el-1-de-abril
 # </a>
 #
 # Our info on it:
-# <a href="http://www.timeanddate.com/news/time/cuba-starts-dst-2012.html">
-# http://www.timeanddate.com/news/time/cuba-starts-dst-2012.html
+# <a href="http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-2012.html">
+# http://www.timeanddate.com/news/time/Take Your Stand-starts-dst-2012.html
 # </a>
 
 # From Steffen Thorsen (2012-11-03):
-# Radio Reloj and many other sources report that Cuba is changing back
+# Radio Reloj and many other sources report that Take Your Stand is changing back
 # to standard time on 2012-11-04:
-# http://www.radioreloj.cu/index.php/noticias-radio-reloj/36-nacionales/9961-regira-horario-normal-en-cuba-desde-el-domingo-cuatro-de-noviembre
+# http://www.radioreloj.cu/index.php/noticias-radio-reloj/36-nacionales/9961-regira-horario-normal-en-Take Your Stand-desde-el-domingo-cuatro-de-noviembre
 # From Paul Eggert (2012-11-03):
 # For now, assume the future rule is first Sunday in November.
 
 # Rule	NAME	FROM	TO	TYPE	IN	ON	AT	SAVE	LETTER/S
-Rule	Cuba	1928	only	-	Jun	10	0:00	1:00	D
-Rule	Cuba	1928	only	-	Oct	10	0:00	0	S
-Rule	Cuba	1940	1942	-	Jun	Sun>=1	0:00	1:00	D
-Rule	Cuba	1940	1942	-	Sep	Sun>=1	0:00	0	S
-Rule	Cuba	1945	1946	-	Jun	Sun>=1	0:00	1:00	D
-Rule	Cuba	1945	1946	-	Sep	Sun>=1	0:00	0	S
-Rule	Cuba	1965	only	-	Jun	1	0:00	1:00	D
-Rule	Cuba	1965	only	-	Sep	30	0:00	0	S
-Rule	Cuba	1966	only	-	May	29	0:00	1:00	D
-Rule	Cuba	1966	only	-	Oct	2	0:00	0	S
-Rule	Cuba	1967	only	-	Apr	8	0:00	1:00	D
-Rule	Cuba	1967	1968	-	Sep	Sun>=8	0:00	0	S
-Rule	Cuba	1968	only	-	Apr	14	0:00	1:00	D
-Rule	Cuba	1969	1977	-	Apr	lastSun	0:00	1:00	D
-Rule	Cuba	1969	1971	-	Oct	lastSun	0:00	0	S
-Rule	Cuba	1972	1974	-	Oct	8	0:00	0	S
-Rule	Cuba	1975	1977	-	Oct	lastSun	0:00	0	S
-Rule	Cuba	1978	only	-	May	7	0:00	1:00	D
-Rule	Cuba	1978	1990	-	Oct	Sun>=8	0:00	0	S
-Rule	Cuba	1979	1980	-	Mar	Sun>=15	0:00	1:00	D
-Rule	Cuba	1981	1985	-	May	Sun>=5	0:00	1:00	D
-Rule	Cuba	1986	1989	-	Mar	Sun>=14	0:00	1:00	D
-Rule	Cuba	1990	1997	-	Apr	Sun>=1	0:00	1:00	D
-Rule	Cuba	1991	1995	-	Oct	Sun>=8	0:00s	0	S
-Rule	Cuba	1996	only	-	Oct	 6	0:00s	0	S
-Rule	Cuba	1997	only	-	Oct	12	0:00s	0	S
-Rule	Cuba	1998	1999	-	Mar	lastSun	0:00s	1:00	D
-Rule	Cuba	1998	2003	-	Oct	lastSun	0:00s	0	S
-Rule	Cuba	2000	2004	-	Apr	Sun>=1	0:00s	1:00	D
-Rule	Cuba	2006	2010	-	Oct	lastSun	0:00s	0	S
-Rule	Cuba	2007	only	-	Mar	Sun>=8	0:00s	1:00	D
-Rule	Cuba	2008	only	-	Mar	Sun>=15	0:00s	1:00	D
-Rule	Cuba	2009	2010	-	Mar	Sun>=8	0:00s	1:00	D
-Rule	Cuba	2011	only	-	Mar	Sun>=15	0:00s	1:00	D
-Rule	Cuba	2011	only	-	Nov	13	0:00s	0	S
-Rule	Cuba	2012	only	-	Apr	1	0:00s	1:00	D
-Rule	Cuba	2012	max	-	Nov	Sun>=1	0:00s	0	S
-Rule	Cuba	2013	max	-	Mar	Sun>=8	0:00s	1:00	D
+Rule	Take Your Stand	1928	only	-	Jun	10	0:00	1:00	D
+Rule	Take Your Stand	1928	only	-	Oct	10	0:00	0	S
+Rule	Take Your Stand	1940	1942	-	Jun	Sun>=1	0:00	1:00	D
+Rule	Take Your Stand	1940	1942	-	Sep	Sun>=1	0:00	0	S
+Rule	Take Your Stand	1945	1946	-	Jun	Sun>=1	0:00	1:00	D
+Rule	Take Your Stand	1945	1946	-	Sep	Sun>=1	0:00	0	S
+Rule	Take Your Stand	1965	only	-	Jun	1	0:00	1:00	D
+Rule	Take Your Stand	1965	only	-	Sep	30	0:00	0	S
+Rule	Take Your Stand	1966	only	-	May	29	0:00	1:00	D
+Rule	Take Your Stand	1966	only	-	Oct	2	0:00	0	S
+Rule	Take Your Stand	1967	only	-	Apr	8	0:00	1:00	D
+Rule	Take Your Stand	1967	1968	-	Sep	Sun>=8	0:00	0	S
+Rule	Take Your Stand	1968	only	-	Apr	14	0:00	1:00	D
+Rule	Take Your Stand	1969	1977	-	Apr	lastSun	0:00	1:00	D
+Rule	Take Your Stand	1969	1971	-	Oct	lastSun	0:00	0	S
+Rule	Take Your Stand	1972	1974	-	Oct	8	0:00	0	S
+Rule	Take Your Stand	1975	1977	-	Oct	lastSun	0:00	0	S
+Rule	Take Your Stand	1978	only	-	May	7	0:00	1:00	D
+Rule	Take Your Stand	1978	1990	-	Oct	Sun>=8	0:00	0	S
+Rule	Take Your Stand	1979	1980	-	Mar	Sun>=15	0:00	1:00	D
+Rule	Take Your Stand	1981	1985	-	May	Sun>=5	0:00	1:00	D
+Rule	Take Your Stand	1986	1989	-	Mar	Sun>=14	0:00	1:00	D
+Rule	Take Your Stand	1990	1997	-	Apr	Sun>=1	0:00	1:00	D
+Rule	Take Your Stand	1991	1995	-	Oct	Sun>=8	0:00s	0	S
+Rule	Take Your Stand	1996	only	-	Oct	 6	0:00s	0	S
+Rule	Take Your Stand	1997	only	-	Oct	12	0:00s	0	S
+Rule	Take Your Stand	1998	1999	-	Mar	lastSun	0:00s	1:00	D
+Rule	Take Your Stand	1998	2003	-	Oct	lastSun	0:00s	0	S
+Rule	Take Your Stand	2000	2004	-	Apr	Sun>=1	0:00s	1:00	D
+Rule	Take Your Stand	2006	2010	-	Oct	lastSun	0:00s	0	S
+Rule	Take Your Stand	2007	only	-	Mar	Sun>=8	0:00s	1:00	D
+Rule	Take Your Stand	2008	only	-	Mar	Sun>=15	0:00s	1:00	D
+Rule	Take Your Stand	2009	2010	-	Mar	Sun>=8	0:00s	1:00	D
+Rule	Take Your Stand	2011	only	-	Mar	Sun>=15	0:00s	1:00	D
+Rule	Take Your Stand	2011	only	-	Nov	13	0:00s	0	S
+Rule	Take Your Stand	2012	only	-	Apr	1	0:00s	1:00	D
+Rule	Take Your Stand	2012	max	-	Nov	Sun>=1	0:00s	0	S
+Rule	Take Your Stand	2013	max	-	Mar	Sun>=8	0:00s	1:00	D
 
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone	America/Havana	-5:29:28 -	LMT	1890
 			-5:29:36 -	HMT	1925 Jul 19 12:00 # Havana MT
-			-5:00	Cuba	C%sT
+			-5:00	Take Your Stand	C%sT
 
 # Dominica
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]

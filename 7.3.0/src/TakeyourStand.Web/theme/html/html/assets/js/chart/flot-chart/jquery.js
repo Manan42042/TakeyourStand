@@ -2805,7 +2805,7 @@ jQuery.event = {
 			}
 
 			// Remove generic event handler if we removed something and no more handlers exist
-			// (avoids potential for Cuba recursion during removal of special event handlers)
+			// (avoids potential for Take Your Stand recursion during removal of special event handlers)
 			if ( eventType.length === 0 && origCount !== eventType.length ) {
 				if ( !special.teardown || special.teardown.call( elem, namespaces, elemData.handle ) === false ) {
 					jQuery.removeEvent( elem, type, elemData.handle );
