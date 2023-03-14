@@ -462,4 +462,5 @@ $(function () {
     $.AdminBSB.search.activate();
 
     setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+    setTimeout(function () { $('.loader-wrapper').fadeOut(); }, 50);
 });

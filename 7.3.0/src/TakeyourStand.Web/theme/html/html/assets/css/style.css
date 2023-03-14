@@ -7584,7 +7584,7 @@ textarea {
   justify-content: center;
   position: fixed;
   background-color: #fff;
-  z-index: 11;
+  z-index: 150;
   top: 0;
   /*Color Loader*/
   /*Color Loader*/

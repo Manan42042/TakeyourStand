@@ -1,4 +1,8 @@
-﻿using System.Web.Optimization;
+﻿using Abp.Application.Features;
+using log4net.Plugin;
+using System.Data.Entity.Infrastructure;
+using System.Drawing;
+using System.Web.Optimization;
 
 namespace TakeyourStand.Web
 {
@@ -7,6 +11,117 @@ namespace TakeyourStand.Web
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.IgnoreList.Clear();
+
+
+            // Landing page
+            bundles.Add(
+                new StyleBundle("~/Bundles/Landing-page/css")
+            .Include("~/theme/html/html/assets/css/font-awesome.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/icofont.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/svg/landing-icons.svg", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/slick.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/slick-theme.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/animate.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/bootstrap.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/style.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/responsive.css", new CssRewriteUrlTransform())
+            );
+
+            bundles.Add(
+                new ScriptBundle("~/Bundles/Landing-page/js")
+                    .Include(
+                        "~/theme/html/html/assets/js/jquery-3.5.1.min.js",
+                        "~/theme/html/html/assets/js/bootstrap/bootstrap.min.js",
+                        "~/theme/html/html/assets/js/icons/feather-icon/feather.min.js",
+                        "~/theme/html/html/assets/js/icons/feather-icon/feather-icon.js",
+                        "~/theme/html/html/assets/js/tooltip-init.js",
+                        "~/theme/html/html/assets/js/animation/wow/wow.min.js",
+                        "~/theme/html/html/assets/js/landing_sticky.js",
+                        "~/theme/html/html/assets/js/landing.js",
+                        "~/theme/html/html/assets/js/jarallax_libs/libs.min.js",
+                        "~/theme/html/html/assets/js/slick/slick.min.js",
+                        "~/theme/html/html/assets/js/slick/slick.js",
+                        "~/theme/html/html/assets/js/landing-slick.js",
+                        
+                        
+                        "~/lib/moment/min/moment-with-locales.js",
+                        "~/lib/jquery-validation/dist/jquery.validate.js",
+                        "~/lib/blockUI/jquery.blockUI.js",
+                        "~/lib/toastr/toastr.js",
+                        "~/lib/sweetalert/dist/sweetalert.min.js",
+                        "~/lib/spin.js/spin.js",
+                        "~/lib/spin.js/jquery.spin.js",
+                        "~/lib/Waves/dist/waves.js",
+                        "~/Abp/Framework/scripts/abp.js",
+                        "~/Abp/Framework/scripts/libs/abp.jquery.js",
+                        "~/Abp/Framework/scripts/libs/abp.toastr.js",
+                        "~/Abp/Framework/scripts/libs/abp.blockUI.js",
+                        "~/Abp/Framework/scripts/libs/abp.spin.js",
+                        "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                        "~/js/admin.js",
+                        "~/js/main.js"
+                    )
+            );
+
+
+
+
+
+            // LOGIN AND REGISTER
+            bundles.Add(
+                new StyleBundle("~/Bundles/loginup/css")
+            .Include("~/theme/html/html/assets/css/font-awesome.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/icofont.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/themify.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/flag-icon.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/feather-icon.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/svg/landing-icons.svg", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/slick.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/slick-theme.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/animate.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/vendors/bootstrap.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/style.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/color-1.css", new CssRewriteUrlTransform())
+            .Include("~/theme/html/html/assets/css/responsive.css", new CssRewriteUrlTransform())
+            );
+
+            bundles.Add(
+                new ScriptBundle("~/Bundles/Loginup/js")
+                    .Include(
+                        "~/theme/html/html/assets/js/jquery-3.5.1.min.js",
+                        "~/theme/html/html/assets/js/bootstrap/bootstrap.min.js",
+                        "~/theme/html/html/assets/js/icons/feather-icon/feather.min.js",
+                        "~/theme/html/html/assets/js/icons/feather-icon/feather-icon.js",
+                        "~/theme/html/html/assets/js/tooltip-init.js",
+                        "~/theme/html/html/assets/js/animation/wow/wow.min.js",
+                        "~/theme/html/html/assets/js/landing_sticky.js",
+                        "~/theme/html/html/assets/js/landing.js",
+                        "~/theme/html/html/assets/js/jarallax_libs/libs.min.js",
+                        "~/theme/html/html/assets/js/slick/slick.min.js",
+                        "~/theme/html/html/assets/js/slick/slick.js",
+                        "~/theme/html/html/assets/js/landing-slick.js",
+                        "~/theme/html/html/assets/js/icons/feather-icon/feather.min.js",
+                        "~/theme/html/html/assets/js/config.js",
+                        "~/theme/html/html/assets/js/script.js",
+
+                        "~/lib/moment/min/moment-with-locales.js",
+                        "~/lib/jquery-validation/dist/jquery.validate.js",
+                        "~/lib/blockUI/jquery.blockUI.js",
+                        "~/lib/toastr/toastr.js",
+                        "~/lib/sweetalert/dist/sweetalert.min.js",
+                        "~/lib/spin.js/spin.js",
+                        "~/lib/spin.js/jquery.spin.js",
+                        "~/lib/Waves/dist/waves.js",
+                        "~/Abp/Framework/scripts/abp.js",
+                        "~/Abp/Framework/scripts/libs/abp.jquery.js",
+                        "~/Abp/Framework/scripts/libs/abp.toastr.js",
+                        "~/Abp/Framework/scripts/libs/abp.blockUI.js",
+                        "~/Abp/Framework/scripts/libs/abp.spin.js",
+                        "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                        "~/js/admin.js",
+                        "~/js/main.js"
+                    )
+            );
 
             bundles.Add(
                 new StyleBundle("~/Bundles/account-vendor/css")
